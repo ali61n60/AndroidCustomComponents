@@ -17,7 +17,8 @@ namespace CustomComponents.CompoundView
     public class LenghtPicker:LinearLayout
     {
         public event LenghtChangedHandler LenghChanged;
-        public int NumberOfInches { get { return _numberOfInches; } }
+        public int NumberOfInches => _numberOfInches;
+
         protected void OnLenghtChanged(object sender)
         {
             if (LenghChanged != null)
@@ -54,6 +55,7 @@ namespace CustomComponents.CompoundView
             _buttonPlus.Click += _buttonPlus_Click;
 
             _textView = rootView.FindViewById<TextView>(Resource.Id.textView);
+            
             updateControls();
         }
 
