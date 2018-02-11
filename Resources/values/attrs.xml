@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <declare-styleable name="Pizza">
+    <attr name="NumberOfCuts" format="integer"/>
+    <attr name="StrokeWidth" format="dimension"/>
+    <attr name="Color" format="color"/>
+  </declare-styleable>
+</resources>

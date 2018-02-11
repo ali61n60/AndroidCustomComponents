@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomComponents.Sideway.SidewayLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@android:color/holo_green_dark"
+        android:text="Goodnight Moon" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:background="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:text="Green Eggs and Ham" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:textColor="@android:color/holo_blue_light"
+        android:background="@android:color/holo_purple"
+        android:text="Matilda" />
+</CustomComponents.Sideway.SidewayLayout>
