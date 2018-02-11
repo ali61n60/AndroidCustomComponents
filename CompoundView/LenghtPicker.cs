@@ -75,11 +75,11 @@ namespace CustomComponents.CompoundView
         {
             int feet = _numberOfInches/12;
             int inches = _numberOfInches%12;
-            string text = string.Format("{0}' {1}\"", feet, inches);
+            string text = $"{feet}' {inches}\"";
             if (feet == 0)
-                text = string.Format("{0}\"", inches);
+                text = $"{inches}\"";
             else if (inches == 0)
-                text = string.Format("{0}'", feet);
+                text = $"{feet}'";
             _textView.Text = text;
             _buttonMinus.Enabled = _numberOfInches > 0;
         }
