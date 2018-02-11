@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CustomComponents
 {
-    [Activity(Label = "ActivityPhotoSpiral")]
+    [Activity(Label = "ActivityPhotoSpiral", MainLauncher = true)]
     public class ActivityPhotoSpiral : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

@@ -13,7 +13,7 @@ using CustomComponents.Draw;
 
 namespace CustomComponents
 {
-    [Activity(Label = "ActivityPizza", MainLauncher = true)]
+    [Activity(Label = "ActivityPizza")]
     public class ActivityPizza : Activity
     {
         Button _buttonCuts;
