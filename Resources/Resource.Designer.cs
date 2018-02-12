@@ -90,6 +90,9 @@ namespace CustomComponents
 			// aapt resource value: 0x7f050007
 			public const int buttonPlus = 2131034119;
 			
+			// aapt resource value: 0x7f05000f
+			public const int clockView1 = 2131034127;
+			
 			// aapt resource value: 0x7f050003
 			public const int firstPizza = 2131034115;
 			
@@ -153,6 +156,9 @@ namespace CustomComponents
 			
 			// aapt resource value: 0x7f030004
 			public const int Main = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int ShowClock = 2130903045;
 			
 			static Layout()
 			{
