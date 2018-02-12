@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CustomComponents
 {
-    [Activity(Label = "ClockViewActivity", MainLauncher = true)]
+    [Activity(Label = "ClockViewActivity")]
     public class ClockViewActivity : Activity
     {
         private Button button;

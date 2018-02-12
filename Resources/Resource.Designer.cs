@@ -158,7 +158,10 @@ namespace CustomComponents
 			public const int Main = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int ShowClock = 2130903045;
+			public const int mirror = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int ShowClock = 2130903046;
 			
 			static Layout()
 			{
