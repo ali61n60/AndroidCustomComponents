@@ -35,8 +35,8 @@ namespace CustomComponents.Sideway
         {
             canvas.DrawColor(Color.LightGray);
             canvas.Save();
-            canvas.Translate(0,Height);
-            canvas.Rotate(-90);
+            canvas.Translate(0,Height);//move yuor pen in y directcion
+            canvas.Rotate(-90);//rotate your hand counter clockwise
             base.DispatchDraw(canvas);
             canvas.Restore();
         }
