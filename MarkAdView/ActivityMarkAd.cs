@@ -10,23 +10,22 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace CustomComponents
+namespace CustomComponents.MarkAdView
 {
-    [Activity(Label = "ActivityMirror")]
-    public class ActivityMirror : Activity
+    [Activity(Label = "ActivityMarkAd", MainLauncher = true)]
+    public class ActivityMarkAd : Activity
     {
+        private MarkAdView markAdView;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            try
-            {
-                SetContentView(Resource.Layout.mirror);
-            }
-            catch (Exception ex)
-            {
-                Toast.MakeText(this,ex.Message,ToastLength.Long).Show();
-            }
-            
+
+            SetContentView(Resource.Layout.MarkAd);
+
+            markAdView = FindViewById<MarkAdView>(Resource.Id.markAdView1);
         }
+
+       
     }
 }

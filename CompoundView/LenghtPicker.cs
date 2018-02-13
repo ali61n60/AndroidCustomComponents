@@ -40,7 +40,8 @@ namespace CustomComponents.CompoundView
         private void initialize()
         {
             LayoutInflater layoutInflater=LayoutInflater.From(Context);
-            View rootView= layoutInflater.Inflate(Resource.Layout.lenghtPicker,this);
+            View rootView= layoutInflater.Inflate( Resource.Layout.lenghtPicker,this);
+           
 
             _buttonMinus =rootView.FindViewById<Button>(Resource.Id.buttonMinus);
             _buttonMinus.Click += _buttonMinus_Click;

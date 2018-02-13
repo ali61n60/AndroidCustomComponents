@@ -90,8 +90,8 @@ namespace CustomComponents
 			// aapt resource value: 0x7f050007
 			public const int buttonPlus = 2131034119;
 			
-			// aapt resource value: 0x7f05000f
-			public const int clockView1 = 2131034127;
+			// aapt resource value: 0x7f050010
+			public const int clockView1 = 2131034128;
 			
 			// aapt resource value: 0x7f050003
 			public const int firstPizza = 2131034115;
@@ -110,6 +110,9 @@ namespace CustomComponents
 			
 			// aapt resource value: 0x7f05000d
 			public const int linearLayout3 = 2131034125;
+			
+			// aapt resource value: 0x7f05000f
+			public const int markAdView1 = 2131034127;
 			
 			// aapt resource value: 0x7f05000e
 			public const int squarView1 = 2131034126;
@@ -158,10 +161,13 @@ namespace CustomComponents
 			public const int Main = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int mirror = 2130903045;
+			public const int MarkAd = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int ShowClock = 2130903046;
+			public const int mirror = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int ShowClock = 2130903047;
 			
 			static Layout()
 			{

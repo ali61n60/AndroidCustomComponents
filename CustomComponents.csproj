@@ -58,6 +58,8 @@
     <Compile Include="Draw\Pizza.cs" />
     <Compile Include="Layout\PhotoSpiral.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MarkAdView\ActivityMarkAd.cs" />
+    <Compile Include="MarkAdView\MarkAdView.cs" />
     <Compile Include="Measure\SquareView.cs" />
     <Compile Include="MirrorText\MirrorText.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -86,6 +88,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\mirror.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MarkAd.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
