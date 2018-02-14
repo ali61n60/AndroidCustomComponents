@@ -17,8 +17,9 @@ namespace CustomComponents.MarkAdView
 {
     class MarkAdView : View
     {
-        private bool isMerked;
+        private bool _isMerked;
         private Paint _paint;
+        public int NumberOfCuts { get; set; }
         public MarkAdView(Context context) : base(context)
         {
             init();
@@ -36,14 +37,22 @@ namespace CustomComponents.MarkAdView
             _paint=new Paint(PaintFlags.AntiAlias);
             _paint.Color = Color.Gold;
             _paint.StrokeWidth = 3;
+            NumberOfCuts = 8;
 
-            this.Click += MarkAdView_Click;
         }
 
-        private void MarkAdView_Click(object sender, EventArgs e)
+        public void SetMark(bool isMerked)
         {
-            isMerked = !isMerked;
-            Invalidate();
+            if (_isMerked != isMerked)
+            {
+                _isMerked = isMerked;
+                Invalidate();
+            }
+        }
+
+        public bool GetMark()
+        {
+            return _isMerked;
         }
 
         protected override void OnMeasure(int widthMeasureSpec, int heightMeasureSpec)
@@ -60,17 +69,17 @@ namespace CustomComponents.MarkAdView
         {
             int cx = Width / 2;
             int cy = Height / 2;
-            if (isMerked)
+            if (_isMerked)
             {
                 canvas.DrawCircle(cx,cy,Width/3,_paint);
             }
             
            
             canvas.Save();
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < NumberOfCuts; i++)
             {
                 canvas.DrawLine(cx, 0, Width, cy, _paint);
-                canvas.Rotate(60, cx, cy);
+                canvas.Rotate(360f/NumberOfCuts, cx, cy);
             }
 
             canvas.Restore();

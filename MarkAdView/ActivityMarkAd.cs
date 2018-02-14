@@ -24,8 +24,12 @@ namespace CustomComponents.MarkAdView
             SetContentView(Resource.Layout.MarkAd);
 
             markAdView = FindViewById<MarkAdView>(Resource.Id.markAdView1);
+            markAdView.Click += MarkAdView_Click;
         }
 
-       
+        private void MarkAdView_Click(object sender, EventArgs e)
+        {
+            markAdView.SetMark(!markAdView.GetMark());
+        }
     }
 }
